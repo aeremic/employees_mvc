@@ -1,0 +1,38 @@
+﻿@using Application.Queries.GetEmployeesChartData;
+@model List<GetEmployeesChartDataDto>
+
+@{
+	ViewData["Title"] = "EmployeesChartData";
+}
+
+<h3>Employees Chart Data</h3>
+<script>
+	google.charts.load('current', { 'packages': ['corechart'] });
+	google.charts.setOnLoadCallback(drawChart);
+
+	function drawChart() {
+		var data = @Html.Raw(Json.Serialize(@Model));
+
+		var headerData = [['Employee Name', 'Time Worked Percentage']];
+		var employeesData = data.map((item) => {
+			return [item.employeeName, item.workDurationPercentage]
+		})
+		var arrayForChart = headerData.concat(employeesData);
+
+		const chartData = google.visualization.arrayToDataTable(arrayForChart);
+
+		const chart = new google.visualization.PieChart(document.getElementById('piechart'));
+		google.visualization.events.addListener(chart, 'ready', function () {
+			piechart.innerHTML = '<img id="chart" src=' + chart.getImageURI() + '>';
+			document.getElementById("download-chart-link").setAttribute("href", chart.getImageURI())
+		});
+
+		chart.draw(chartData, {
+			title: 'Employees Working Hours'
+		});
+	}
+</script>
+<div class="text-center">
+	<div id="piechart" style="margin: auto; width: 900px; height: 500px;"></div>
+	<a id="download-chart-link" href="/" download="">Download Chart</a>
+</div>

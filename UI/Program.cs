@@ -6,7 +6,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddApplication();
-builder.Services.AddServices();
+builder.Services.AddExternalServices();
 builder.Services.ConfigureOptions<RcVaultOptionsSetup>();
 
 builder.Services.AddControllersWithViews();

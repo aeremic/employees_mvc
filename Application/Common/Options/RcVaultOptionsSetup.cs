@@ -24,6 +24,5 @@ namespace Application.Common.Options
                 .GetSection(SectionName)
                 .Bind(options);
         }
-
     }
 }
