@@ -1,0 +1,27 @@
+﻿@using Application.Queries.GetGroupedEmployees;
+@model List<GroupedEmployeeDto>
+
+@{
+	ViewData["Title"] = "Employees";
+}
+
+<div class="container text-center">
+	<table class="table">
+		<thead>
+			<tr>
+				<th scope="col">Name</th>
+				<th scope="col">Total Time Worked</th>
+			</tr>
+		</thead>
+		<tbody>
+			@foreach (var item in Model)
+			{
+				var style = (item.WorkDurationInHours >= 100) ? "table-primary" : "table-danger";
+				<tr class="@style">
+					<td>@item.EmployeeName</td>
+					<td>@item.WorkDurationInHours</td>
+				</tr>
+			}
+		</tbody>
+	</table>
+</div>

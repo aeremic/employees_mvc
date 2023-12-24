@@ -1,0 +1,15 @@
+C:\Users\Andrija\employees_mvc\ExternalServices\bin\Debug\net7.0\ExternalServices.deps.json
+C:\Users\Andrija\employees_mvc\ExternalServices\bin\Debug\net7.0\ExternalServices.dll
+C:\Users\Andrija\employees_mvc\ExternalServices\bin\Debug\net7.0\ExternalServices.pdb
+C:\Users\Andrija\employees_mvc\ExternalServices\bin\Debug\net7.0\Application.dll
+C:\Users\Andrija\employees_mvc\ExternalServices\bin\Debug\net7.0\Application.pdb
+C:\Users\Andrija\employees_mvc\ExternalServices\obj\Debug\net7.0\ExternalServices.csproj.AssemblyReference.cache
+C:\Users\Andrija\employees_mvc\ExternalServices\obj\Debug\net7.0\ExternalServices.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Andrija\employees_mvc\ExternalServices\obj\Debug\net7.0\ExternalServices.AssemblyInfoInputs.cache
+C:\Users\Andrija\employees_mvc\ExternalServices\obj\Debug\net7.0\ExternalServices.AssemblyInfo.cs
+C:\Users\Andrija\employees_mvc\ExternalServices\obj\Debug\net7.0\ExternalServices.csproj.CoreCompileInputs.cache
+C:\Users\Andrija\employees_mvc\ExternalServices\obj\Debug\net7.0\ExternalServices.csproj.CopyComplete
+C:\Users\Andrija\employees_mvc\ExternalServices\obj\Debug\net7.0\ExternalServices.dll
+C:\Users\Andrija\employees_mvc\ExternalServices\obj\Debug\net7.0\refint\ExternalServices.dll
+C:\Users\Andrija\employees_mvc\ExternalServices\obj\Debug\net7.0\ExternalServices.pdb
+C:\Users\Andrija\employees_mvc\ExternalServices\obj\Debug\net7.0\ref\ExternalServices.dll
